@@ -1,0 +1,81 @@
+# Multifun RECALART ELECTRONIC 
+
+  - platform: scrape
+#   http://IP Address change according to your IP Multifun address
+    resource: http://192.168.1.2
+    scan_interval: 30
+    name: Zewnętrzna
+    select: '.blue'
+#   index: 0
+#   value_template: '{{ ((value.split(" ")[0]) | replace (",", ".")) }}'
+    unit_of_measurement: "°C"
+
+  - platform: scrape
+#   http://IP Address change according to your IP Multifun address
+    resource: http://192.168.1.2
+    scan_interval: 10
+    name: Spaliny
+    select: '.black'
+#   index: 0
+#   value_template: '{{ ((value.split(" ")[0]) | replace (",", ".")) }}'
+    unit_of_measurement: "°C"
+
+  - platform: scrape
+#   http://IP Address change according to your IP Multifun address
+    resource: http://192.168.1.2
+    scan_interval: 30
+    name: Parter
+    select: '.cherry'
+    index: 0
+    value_template: '{{ ((value.split(" ")[0]) | replace (",", ".")) }}'
+    unit_of_measurement: "°C"
+
+  - platform: scrape
+#   http://IP Address change according to your IP Multifun address
+    resource: http://192.168.1.2
+    scan_interval: 30
+    name: Piętro
+    select: '.cherry'
+    index: 1
+    value_template: '{{ ((value.split(" ")[0]) | replace (",", ".")) }}'
+    unit_of_measurement: "°C"
+
+  - platform: scrape
+#   http://IP Address change according to your IP Multifun address
+    resource: http://192.168.1.2
+    scan_interval: 30
+    name: C.O. 1
+    select: '.red'
+    index: 0
+    value_template: '{{ ((value.split(" ")[0]) | replace (",", ".")) }}'
+    unit_of_measurement: "°C"
+
+  - platform: scrape
+#   http://IP Address change according to your IP Multifun address
+    resource: http://192.168.1.2
+    scan_interval: 30
+    name: C.O. 2
+    select: '.red'
+    index: 1
+    value_template: '{{ ((value.split(" ")[0]) | replace (",", ".")) }}'
+    unit_of_measurement: "°C"
+
+  - platform: scrape
+#   http://IP Address change according to your IP Multifun address
+    resource: http://192.168.1.2
+    scan_interval: 10
+    name: Kocioł
+    select: '.red'
+    index: 2
+    value_template: '{{ ((value.split(" ")[0]) | replace (",", ".")) }}'
+    unit_of_measurement: "°C"
+
+  - platform: scrape
+#   http://IP Address change according to your IP Multifun address
+    resource: http://192.168.1.2
+    scan_interval: 30
+    name: C.W.U.
+    select: '.red'
+    index: 3
+    value_template: '{{ ((value.split(" ")[0]) | replace (",", ".")) }}'
+    unit_of_measurement: "°C"
